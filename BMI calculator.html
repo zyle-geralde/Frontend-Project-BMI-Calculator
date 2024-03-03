@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Bmi Calculator</title>
+        <style>
+            .body{
+                display: flex;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
+                background-color: rgb(255, 248, 218);
+            }
+            .encompase{
+                height: 279.6px;
+                display: flex;
+                align-items: center;
+                margin-top: 100px;
+            }
+            .maincont{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 30px;
+            }
+            .BMItitle{
+                font-family: 'Roboto', sans-serif;
+                background-color: rgb(206, 55, 0);
+                width: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: white;
+                height: 50px;
+                border-radius: 1000px;
+                margin-bottom: 10px;
+            }
+            .BMIcontent{
+                border: 1px solid rgb(240, 66, 3);
+                padding: 25px;
+                background-color: rgb(255, 220, 208);
+                border-radius: 10px;
+            }
+            .BMIsubcont{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .weightbox{display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 255px;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                
+            }
+            .weightword{
+                background-color: rgb(0, 113, 113);
+                color: white;
+                padding: 10px 10px;
+                border-radius: 5px;
+            }
+            .inputweight{
+                height: 30px;
+            }
+
+            .heightbox{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 255px;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+            .heightword{
+                background-color: rgb(0, 113, 113);
+                color: white;
+                padding: 10px 10px;
+                border-radius: 5px;
+            }
+            .inputheight{
+                height: 30px;
+            }
+            .bmitotal{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 255px;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+            .Bmiword{
+                background-color: rgb(0, 171, 171);
+                color: white;
+                padding: 10px 10px;
+                border-radius: 5px;
+            }
+            .inputbmi{
+                height: 30px;
+                width: 190px;
+            }
+            .calcbut{
+                background-color: rgb(0, 171, 171);
+                color: white;
+                padding: 10px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+
+            .Bmidef{
+                border: 5px solid rgb(255, 65, 119);
+                border-radius: 10px;
+                padding: 10px 10px;
+                background-color: rgb(255, 203, 218);
+            }
+            .RangeCont{
+                margin: 0px;
+            }
+            .range{
+                margin-top: 10px;
+            }
+            .Rangetitle{
+                font-size: 30px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body class = body>
+        <div class = encompase>
+            <div class = maincont>
+                <div class = BMItitle>
+                    <div>BMI CALCULATOR</div>
+                </div>
+    
+                <div class= BMIcontent>    
+                    <div class = BMIsubcont>
+    
+                        <div class = weightbox>
+                            <div class = weightword>
+                                Weight:
+                            </div>
+                            <input class = inputweight type="text" placeholder="kg">
+                        </div>
+    
+                        <div class = heightbox>
+                            <div class = heightword>
+                                Height:
+                            </div>
+                            <input class = inputheight type="text" placeholder="cm">
+                        </div>
+    
+                        <div class = calcbut> Calculate</div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class = Bmidefcont>
+                <div class = Bmidef>
+                    <div class = Rangetitle>BMI Range</div>
+                    <ul class = RangeCont>
+                        <li class = range>
+                            Underweight ==> below 18.5 
+                        </li>
+                        <li class = range>
+                            Normal ==> between 18.5 and 24.9
+                        </li>
+                        <li class = range>
+                            Overweight ==> between 25 and 29.9 
+                        </li>
+                        <li class = range>
+                            Obesity ==> Over 30
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="BMI calculator.js"></script>
+    </body>
+</html>
